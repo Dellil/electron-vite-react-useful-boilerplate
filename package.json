@@ -1,0 +1,56 @@
+{
+  "name": "electron-vite-react",
+  "version": "1.0.0",
+  "main": "dist-electron/main/index.js",
+  "description": "Electron Vite React useful boilerplate.",
+  "author": "Chanhee Jang <aksaksdm@naver.com>",
+  "license": "MIT",
+  "private": true,
+  "debug": {
+    "env": {
+      "VITE_DEV_SERVER_URL": "http://127.0.0.1:7777/"
+    }
+  },
+  "scripts": {
+    "dev": "vite",
+    "build": "tsc && vite build && electron-builder",
+    "preview": "vite preview",
+    "e2e": "npx playwright test",
+    "storybook": "start-storybook -p 6006",
+    "build-storybook": "build-storybook"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.20.12",
+    "@playwright/test": "^1.29.2",
+    "@storybook/addon-actions": "^6.5.16",
+    "@storybook/addon-essentials": "^6.5.16",
+    "@storybook/addon-interactions": "^6.5.16",
+    "@storybook/addon-links": "^6.5.16",
+    "@storybook/builder-vite": "^0.4.2",
+    "@storybook/react": "^6.5.16",
+    "@storybook/testing-library": "^0.0.13",
+    "@types/react": "^18.0.27",
+    "@types/react-dom": "^18.0.10",
+    "@vitejs/plugin-react": "^3.0.1",
+    "babel-loader": "^8.3.0",
+    "electron": "^22.0.3",
+    "electron-builder": "^23.6.0",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "typescript": "^4.9.4",
+    "vite": "^4.0.4",
+    "vite-electron-plugin": "^0.7.4",
+    "vite-plugin-electron-renderer": "^0.11.4",
+    "vite-tsconfig-paths": "^4.0.5"
+  },
+  "engines": {
+    "node": "^14.18.0 || >=16.0.0"
+  },
+  "dependencies": {
+    "@emotion/babel-plugin": "^11.10.5",
+    "@emotion/react": "^11.10.5",
+    "@emotion/styled": "^11.10.5",
+    "mobx": "^6.8.0",
+    "mobx-react-lite": "^3.4.0"
+  }
+}
